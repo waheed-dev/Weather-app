@@ -25,7 +25,7 @@ export default function About() {
                 color : 'transparent',mt :'32px',mb : '32px',[theme.breakpoints.down('md')]: {
                     fontSize :'x-large',letterSpacing : '2'
                 }}}textAlign={'center'}>
-                Muhammad Noman
+                Noman Ijaz
             </Typography>
             <Typography variant={'h3'} sx={{background :'linear-gradient(to left, #7928CA, #FF0080)'
                 ,backgroundClip :'text',

@@ -14,51 +14,46 @@ export default function DataTable({data}) {
     const time = moment().format("hh:mm A")
 
     return (
-        <Box  textAlign={'center'}>
-           <Box  sx={{display :'flex',justifyContent : 'space-around'}}>
-               <Typography color={'#01FF70'} textAlign={'left'}>Country</Typography>
-               <Typography color={'#01FF70'}>{contry}</Typography>
+        <Box sx={{display : 'flex',justifyContent : 'space-evenly'}}>
+           <Box>
+               <Typography color={'#01FF70'} >Country</Typography>
+               <Divider color={'#01ff70'}/>
+                <Typography color={'#01FF70'}>City</Typography>
+               <Divider  color={'#01ff70'}/>
+                <Typography color={'#01FF70'} >Temperature</Typography>
+               <Divider  color={'#01ff70'}/>
+                <Typography color={'#01FF70'}>Description</Typography>
+               <Divider  color={'#01ff70'}/>
+                <Typography color={'#01FF70'} >Humidity</Typography>
+               <Divider  color={'#01ff70'}/>
+                <Typography color={'#01FF70'} >Sunrise</Typography>
+               <Divider  color={'#01ff70'}/>
+                <Typography color={'#01FF70'}>Sunset</Typography>
+               <Divider  color={'#01ff70'}/>
+                <Typography color={'#01FF70'}>Day</Typography>
+               <Divider  color={'#01ff70'}/>
+                <Typography color={'#01FF70'} >Time</Typography>
            </Box>
             <Divider/>
-            <Box  sx={{display :'flex',justifyContent : 'space-around',alignContent : 'baseline'}}>
-                <Typography color={'#01FF70'} sx={{display : 'flex',alignContent : 'baseline'}}>City</Typography>
+            <Box>
+               <Typography color={'#01FF70'}>{contry}</Typography>
+                <Divider  color={'#01ff70'}/>
                 <Typography color={'#01FF70'}>{name}</Typography>
-            </Box>
-            <Divider/>
-            <Box  sx={{display :'flex',justifyContent : 'space-around',alignContent : 'baseline'}}>
-                <Typography color={'#01FF70'} textAlign={'left'}>Temperature</Typography>
+                <Divider  color={'#01ff70'}/>
                 <Typography color={'#01FF70'}>{temp}°</Typography>
-            </Box>
-            <Divider/>
-            <Box  sx={{display :'flex',justifyContent : 'space-around',alignContent : 'baseline'}}>
-                <Typography color={'#01FF70'}>Description</Typography>
+                <Divider  color={'#01ff70'}/>
                 <Typography color={'#01FF70'}>{description}</Typography>
-            </Box>
-            <Divider/>
-            <Box  sx={{display :'flex',justifyContent : 'space-around',alignContent : 'baseline'}}>
-                <Typography color={'#01FF70'} sx={{display : 'flex',alignContent : 'baseline'}}>Humidity</Typography>
+                <Divider  color={'#01ff70'}/>
                 <Typography color={'#01FF70'}>{ty}</Typography>
-            </Box>
-            <Divider/>
-            <Box  sx={{display :'flex',justifyContent : 'space-around',alignContent : 'baseline'}}>
-                <Typography color={'#01FF70'} sx={{display : 'flex',alignContent : 'baseline'}}>Sunrise</Typography>
+                <Divider  color={'#01ff70'}/>
                 <Typography color={'#01FF70'}>{sunrise}</Typography>
-            </Box>
-            <Divider/>
-            <Box  sx={{display :'flex',justifyContent : 'space-around',alignContent : 'baseline'}}>
-                <Typography color={'#01FF70'} sx={{display : 'flex',alignContent : 'baseline'}}>Sunset</Typography>
+                <Divider  color={'#01ff70'}/>
                 <Typography color={'#01FF70'}>{sunset}</Typography>
-            </Box>
-            <Divider/>
-            <Box  sx={{display :'flex',justifyContent : 'space-around',alignContent : 'baseline'}}>
-                <Typography color={'#01FF70'} sx={{display : 'flex',alignContent : 'baseline'}}>Day</Typography>
+                <Divider  color={'#01ff70'}/>
                 <Typography color={'#01FF70'}>{day}</Typography>
-            </Box>
-            <Divider/>
-            <Box  sx={{display :'flex',justifyContent : 'space-around',alignContent : 'baseline'}}>
-                <Typography color={'#01FF70'} sx={{display : 'flex',alignContent : 'baseline'}}>Time</Typography>
+                <Divider  color={'#01ff70'}/>
                 <Typography color={'#01FF70'}>{time}</Typography>
-                </Box>
+            </Box>
         </Box>
     );
 }
