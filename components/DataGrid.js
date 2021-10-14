@@ -16,7 +16,7 @@ export default function DataTable({data}) {
     return (
         <Box >
            <Box  sx={{display :'flex',justifyContent : 'space-around'}}>
-               <Typography sx={{display : 'flex',alignContent : 'baseline'}}>Country</Typography>
+               <Typography color={'#01FF70'} sx={{display : 'flex',alignContent : 'baseline'}}>Country</Typography>
                <Typography>{contry}</Typography>
            </Box>
             <Divider/>
