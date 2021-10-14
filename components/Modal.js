@@ -20,7 +20,9 @@ export default function BasicModal({data,setData,open,setOpen}) {
                 aria-describedby="modal-modal-description"
                 sx={{'& .MuiBox-root': {
                         backgroundColor: '#3c3c3c',
-                    }}}
+                        border :'none'
+
+                }}}
             >
                 <Box sx={{ position: 'absolute',
                     top: '50%',
