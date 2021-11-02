@@ -9,7 +9,8 @@ export default function DataTable({data}) {
     const sunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString('en-IN')
     const sunset =new Date(data.sys.sunset * 1000).toLocaleTimeString('en-IN')
     const description = data.weather[0].main
-    const ty = data.main.humidity
+    const humidity = data.main.humidity
+    const pressre = data.main.pressure
     const day = moment().format('dddd')
     const time = moment().format("hh:mm A")
 
@@ -40,11 +41,11 @@ export default function DataTable({data}) {
                 <Divider  color={'#01ff70'}/>
                 <Typography color={'#01FF70'}>{name}</Typography>
                 <Divider  color={'#01ff70'}/>
-                <Typography color={'#01FF70'}>{temp}°</Typography>
+                <Typography color={'#01FF70'}>{temp}°C</Typography>
                 <Divider  color={'#01ff70'}/>
                 <Typography color={'#01FF70'}>{description}</Typography>
                 <Divider  color={'#01ff70'}/>
-                <Typography color={'#01FF70'}>{ty}</Typography>
+                <Typography color={'#01FF70'}>{humidity}%</Typography>
                 <Divider  color={'#01ff70'}/>
                 <Typography color={'#01FF70'}>{sunrise}</Typography>
                 <Divider  color={'#01ff70'}/>
@@ -53,6 +54,7 @@ export default function DataTable({data}) {
                 <Typography color={'#01FF70'}>{day}</Typography>
                 <Divider  color={'#01ff70'}/>
                 <Typography color={'#01FF70'}>{time}</Typography>
+
             </Box>
         </Box>
     );

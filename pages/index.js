@@ -10,7 +10,7 @@ import CallToAction from "../components/callToAction";
 
 
 export default function Home() {
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = useState(false);
     const [data,setData] = useState()
   return (
     <Box>
