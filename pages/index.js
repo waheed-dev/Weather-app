@@ -1,11 +1,10 @@
-import Head from 'next/head'
-import Photo from 'next/image'
+
 import React, {useState} from "react";
 
 import Form from "../components/Form";
 import BasicModal from "../components/Modal";
 
-import {Container,Box} from "@mui/material";
+import {Box} from "@mui/material";
 import CallToAction from "../components/callToAction";
 
 

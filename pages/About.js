@@ -1,46 +1,47 @@
-import * as React from 'react';
-import Alert from '@mui/material/Alert';
-import {Typography,Box} from "@mui/material";
-import theme from '../components/theme'
+import {Accordion, Box} from "@mui/material";
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import theme from "../components/theme";
 
-export default function About() {
+const About = () => {
     return (
-        <Box sx={{position : 'relative'}}>
-        <Typography variant={'h4'} textAlign={'center'} sx={{[theme.breakpoints.down('md')]: {
-                fontSize :'x-large',letterSpacing : '2'
-            }}}>
-            Made by
-        </Typography>
-            <Typography variant={'h3'} sx={{background :'linear-gradient(to left, #7928CA, #FF0080)'
-                    ,backgroundClip :'text',
-                color : 'transparent'
-
-                ,mt :'32px',mb : '32px',[theme.breakpoints.down('md')]: {
-                    fontSize :'x-large',letterSpacing : '2'
-                }}}textAlign={'center'}>
-                Abdul Waheed
-            </Typography>
-            <Typography variant={'h3'} sx={{background :'linear-gradient(to left, #7928CA, #FF0080)'
-                ,backgroundClip :'text',
-                color : 'transparent',mt :'32px',mb : '32px',[theme.breakpoints.down('md')]: {
-                    fontSize :'x-large',letterSpacing : '2'
-                }}}textAlign={'center'}>
-                Noman Ijaz
-            </Typography>
-            <Typography variant={'h3'} sx={{background :'linear-gradient(to left, #7928CA, #FF0080)'
-                ,backgroundClip :'text',
-                color : 'transparent',mt :'32px',mb : '32px',[theme.breakpoints.down('md')]: {
-                    fontSize :'x-large',letterSpacing : '2'
-                }}} textAlign={'center'}>
-                Irfan Ali
-            </Typography>
-            <Typography variant={'h3'} sx={{background :'linear-gradient(to left, #7928CA, #FF0080)'
-                ,backgroundClip :'text',
-                color : 'transparent',mt :'32px',mb : '32px',[theme.breakpoints.down('md')]: {
-                    fontSize :'x-large',letterSpacing : '2'
-                }}}textAlign={'center'}>
-                Burhan Zulfiqar
-            </Typography>
+        <Box sx={{position : 'relative '}}>
+            <Typography variant={'h5'} textAlign={'center'} my={'24px'}>FAQ About the App</Typography>
+            <Accordion>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                >
+                    <Typography variant={'h6'} sx={{[theme.breakpoints.down('md')]: {
+                            fontSize :'large',letterSpacing : '2'
+                        }}}>Stack used</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>
+                       React,Nextjs,Material ui
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+            <Accordion>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                >
+                    <Typography variant={'h6'} sx={{[theme.breakpoints.down('md')]: {
+                            fontSize :'large',letterSpacing : '2'
+                        }}}>The Api</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>
+                        This Web-app fetches data from a weather-api called openMapWeatherApi and this displays results.
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
         </Box>
-    );
+    )
 }
+export default About

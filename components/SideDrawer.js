@@ -6,7 +6,7 @@ const SideDrawer = ({open,setOpen}) => {
     return (
 
         <Drawer
-            anchor={'right'}
+            anchor={'left'}
             open={open}
             onClose={()=>{setOpen(!open)}}
             sx={{'& .MuiPaper-root': {
@@ -22,14 +22,7 @@ const SideDrawer = ({open,setOpen}) => {
                     </Box>
             </Typography>
             <Divider/>
-            <Typography color={'#01FF70'}>
-                    <Box sx={{width : '150px',textAlign : 'center'}}>
-                <Link href='Docs'>
-                        Docs
-                </Link>
-                    </Box>
 
-            </Typography>
         </Drawer>
     )
 }

@@ -14,8 +14,8 @@ const api = `https://api.openweathermap.org/data/2.5/weather?q=${value}&units=me
         if (!value) {return null}
         const getLoc = async () => {
             await axios.get(api)
-                .then((res)=>{
-                    setData(res)}).catch((error)=>{
+                .then((res1)=>{
+                    setData(res1)}).catch((error)=>{
                        setToast(true)
                 }) }
 
@@ -33,7 +33,7 @@ function changeHandler(e) {
         <Box sx={{display : 'flex', justifyContent :'center',marginTop :'12px', [theme.breakpoints.down('md')]: {
                 marginTop : ''
             },alignContent : 'center'}}>
-                <TextField value={value} size={'small'} sx={{}} onChange={changeHandler} label='Location' color='secondary'/>
+                <TextField value={value} size={'small'} onChange={changeHandler} label='Location' color='secondary'/>
                 <Button size={'small'} onClick={setOpen} type='submit' variant={"contained"} sx={{marginLeft : '16px',paddingX : '16px',[theme.breakpoints.down('sm')]: {
                         size: 'small',
                         paddingX : '4px',

@@ -14,16 +14,7 @@ export default function CallToAction () {
                  fontSize: 20,
              }
          }}>
-
-             <Typewriter
-                 words={['Almost every Location', 'Updates in real time', 'its free!', 'No compromise on privacy']}
-                 loop={5}
-                 cursor
-                 cursorStyle='_'
-                 typeSpeed={70}
-                 deleteSpeed={50}
-                 delaySpeed={3000}
-             />
+             Live weather For every location
          </Typography>
          <Box height={200} width={400} sx={{
              [theme.breakpoints.down('sm')]: {

@@ -1,13 +1,11 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import DataTable from "./DataGrid";
 
 
 export default function BasicModal({data,setData,open,setOpen}) {
-    console.log(data.data)
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
