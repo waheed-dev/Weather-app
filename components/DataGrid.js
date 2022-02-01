@@ -15,7 +15,6 @@ export default function DataTable({data}) {
     const day = moment().format('dddd')
     const time = moment().format("hh:mm A")
     const timeZone = data.timezone
-    const degree= data.deg
 
     return (
         <Box sx={{display : 'flex',justifyContent : 'space-evenly'}}>
@@ -57,8 +56,7 @@ export default function DataTable({data}) {
                 <Typography color={'#01FF70'}>{day}</Typography>
                 <Divider  color={'#01ff70'}/>
                 <Typography color={'#01FF70'}>{time}</Typography>
-                <Typography color={'#01FF70'}>{timeZone}</Typography>
-                <Typography color={'#01FF70'}>{deg}</Typography>
+
 
             </Box>
         </Box>

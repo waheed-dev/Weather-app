@@ -8,7 +8,6 @@ import DataTable from "./DataGrid";
 export default function BasicModal({data,setData,open,setOpen}) {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-
     return (
         <div>
             <Modal
